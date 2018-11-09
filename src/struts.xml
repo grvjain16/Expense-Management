@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+<struts>
+
+	<package name= "login" namespace="/"  extends="struts-default">
+		<action name="login" class="com.csu.action.LoginAction">
+			<result name="success">com.csu.home/home.jsp</result>
+			<result name="login">com.csu.utils/login.jsp</result>
+		</action>
+	</package>
+	
+	<package name= "maintenance" namespace="/maintenance"  extends="struts-default">
+		<action name="user" class="com.csu.action.UserMaintenanceAction">
+			<result name="success">/com.csu.maintenance/user.jsp</result>
+			<result name="error">/com.csu.utils/error.jsp</result>
+		</action>
+		
+		<action name="userDetails" class="com.csu.action.UserMaintenanceAction">
+			<result type="stream" name="stream">
+				<param name="contentType">application/json</param>
+        		<param name="inputName">inputStream</param>
+        	</result>
+		</action>
+		
+		<action name="saveUser" class="com.csu.action.UserMaintenanceAction">
+			<result type="stream" name="streamText">
+				<param name="contentType">application/text</param>
+        		<param name="inputName">inputStream</param>
+        	</result>
+		</action>
+		
+		
+	</package>
+
+</struts>

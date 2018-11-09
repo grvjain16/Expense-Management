@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package name= "links" namespace="/links"  extends="struts-default">
+		<action name="user">
+			<result></result>
+		</action>
+	</package>
