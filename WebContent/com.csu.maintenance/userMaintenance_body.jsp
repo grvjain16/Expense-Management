@@ -34,44 +34,47 @@ var contextRoot = <%=request.getContextPath()%>
 		
 		<div id="addPage">
 			<form id="addPageForm" action="">
-				<div class="container">
-					<table id="maintenanceTable">
-						<tr>
-							<td><label for="userid">UserID</label>&nbsp;&nbsp;</td>
-							<td><input type="text" placeholder="Enter Your First Name" name="userid" required ="ture"></td>
+				<div id="accordion" class="container">
+					<div><br><br></div>
+					<div>
+						<table  id="maintenanceTable">
+							<tr>
+								<td><label for="userid">UserID</label>&nbsp;&nbsp;</td>
+								<td><input type="text" placeholder="Enter Your First Name" name="userid" required ="ture"></td>
+
+								<td><label for="lname">Password</label>&nbsp;&nbsp;</td>
+								<td><input type="password" placeholder="Enter Your Password" name="psw" required ="ture"></td>
+							</tr>
+							<tr>
+								<td><label for="fname">First Name</label>&nbsp;&nbsp;</td>
+								<td><input type="text" placeholder="Enter Your First Name" name="fname" required ="ture"></td>
+
+								<td><label for="lname">Last Name</label>&nbsp;&nbsp;</td>
+								<td><input type="text" placeholder="Enter Your Last Name" name="lname" required ="ture"></td>
+							</tr>
 							
-							<td><label for="lname">Password</label>&nbsp;&nbsp;</td>
-							<td><input type="password" placeholder="Enter Your Password" name="psw" required ="ture"></td>
-						</tr>
-						<tr>
-							<td><label for="fname">First Name</label>&nbsp;&nbsp;</td>
-							<td><input type="text" placeholder="Enter Your First Name" name="fname" required ="ture"></td>
+							<tr>
+								<td><label for="email">Email</label>&nbsp;&nbsp;</td>
+								<td><input type="text" placeholder="Enter Your First Name" name="email" required =""></td>
+								
+								<td><label for="phone">Phone</label>&nbsp;&nbsp;</td>
+								<td><input type="text" placeholder="Enter Your Phone Number" name="phone" required =""></td>
+							</tr>
 							
-							<td><label for="lname">Last Name</label>&nbsp;&nbsp;</td>
-							<td><input type="text" placeholder="Enter Your Last Name" name="lname" required ="ture"></td>
-						</tr>
-						
-						<tr>
-							<td><label for="email">Email</label>&nbsp;&nbsp;</td>
-							<td><input type="text" placeholder="Enter Your First Name" name="email" required =""></td>
+							<tr>
+								<td><label for="email2">Email2</label>&nbsp;&nbsp;</td>
+								<td><input type="text" placeholder="Enter Your secondary email" name="email2" required =""></td>
+								
+								<td></td>
+								<td></td>
+							</tr>
 							
-							<td><label for="phone">Phone</label>&nbsp;&nbsp;</td>
-							<td><input type="text" placeholder="Enter Your Phone Number" name="phone" required =""></td>
-						</tr>
-						
-						<tr>
-							<td><label for="email2">Email2</label>&nbsp;&nbsp;</td>
-							<td><input type="text" placeholder="Enter Your secondary email" name="email2" required =""></td>
-							
-							<td></td>
-							<td></td>
-						</tr>
-						
-						<tr>
-							<td align="center" colspan="2" ><button id="save"  class="ui-button ui-widget ui-corner-all">Save</button></td>
-							<td align="center" colspan="2" ><button id="cancel"  class="ui-button ui-widget ui-corner-all">Cancel</button></td>
-						</tr>
-					</table>				
+							<tr>
+								<td align="center" colspan="2" ><button id="save"  class="ui-button ui-widget ui-corner-all">Save</button></td>
+								<td align="center" colspan="2" ><button id="cancel"  class="ui-button ui-widget ui-corner-all">Cancel</button></td>
+							</tr>
+						</table>
+					</div>				
 				</div>
 				<input type="hidden" id="action" name="action" value="addUser">
 	

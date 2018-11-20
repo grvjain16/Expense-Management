@@ -41,8 +41,8 @@
 			</div>
 
 			<div class="w3-half">
-			  <img src="<%=request.getContextPath()%>/images/Gaurav.jpg"alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-			  <h3>Gaurav Jain</h3>
+			  <img src="<%=request.getContextPath()%>/images/Ankur.jpeg"alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+			  <h3>Ankur Contractor</h3>
 			  <p>Support</p>
 			</div>
 		</div>

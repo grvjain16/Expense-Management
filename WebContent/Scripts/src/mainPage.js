@@ -1,10 +1,10 @@
 
 function getUserId() {
-	alert(1)
+	
 	  var xhttp = new XMLHttpRequest();
 	  xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-	      alert(this.responseText);
+	      //alert(this.responseText);
 	      document.getElementById("UID").value ="grvjain";
 
 	    }
@@ -15,13 +15,13 @@ function getUserId() {
 
 
 function saveRecord(){
-	alert("save");
+	
 	
 	var form = document.getElementById("userAddForm");
 	var xhttp = new XMLHttpRequest();
 	  xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-	      alert(this.responseText);
+	     // alert(this.responseText);
 	      document.getElementById("userId").value ="grvjain";
 
 	    }

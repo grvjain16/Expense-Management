@@ -1,5 +1,6 @@
 $(document).ready(function (){
-
+	
+	
 	$('#bodyContainer').children('div').each(function () { // Hides all pages except grid page when page is loaded.
 		if(this.id=="gridPage" ? $(this).show() : $(this).hide());
 	});
@@ -20,7 +21,6 @@ $(document).ready(function (){
 	});
 
 	$("#save").click(function(){
-		alert("submit Clicked");
 		//addUser();
 		$('#bodyContainer').children('div').each(function () {
 			if(this.id=="gridPage" ? $(this).css("display", "block"): $(this).css("display", "none"));
@@ -70,10 +70,8 @@ $(document).ready(function (){
 	fetchGridData();
 
 	function addUser(){
-		alert("addUser Javascript Function")
 		var data = $("#addPageForm").serialize();
 		debugger;
-		alert("addUSerFunction")
 		$.ajax({
 			type: "POST",
 			url: "http://localhost:8080/HomeApp/maintenance/saveUser.action?action=addUser",
@@ -81,7 +79,7 @@ $(document).ready(function (){
 			datatype: "text",
 			cache: false,
 			success: function (result) {
-				alert(result);
+//				alert(result);
 				
 			//	fetchGridData();
 			}

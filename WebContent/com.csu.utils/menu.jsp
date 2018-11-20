@@ -16,6 +16,7 @@
 		<a href="/HomeApp/" class="w3-bar-item w3-button w3-teal"><i class="fa fa-sign-out w3-margin-right"></i>Logoff</a>
 		<a href="/HomeApp/com.csu.home/home.jsp" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-home w3-margin-right"></i>Home</a>
 		<a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Expense</a>
+		<a href="http://localhost:8080/HomeApp/expense/expense.action?action=loadPage" class="w3-bar-item w3-button" onClick="">Expense</a>
 		<div class="w3-dropdown-hover w3-hide-small">
 			<button class="w3-button" title="Medical">Medical <i class="fa fa-caret-down"></i></button>  
 				<div class="w3-dropdown-content w3-card-4 w3-bar-block">

@@ -31,8 +31,13 @@
         		<param name="inputName">inputStream</param>
         	</result>
 		</action>
-		
-		
+	</package>
+	
+	<package name="expense" namespace="/expense" extends="struts-default">
+		<action name="expense" class="com.csu.action.ExpenseAction">
+			<result name="success">/com.csu.expense/expense.jsp</result>
+			<result name="error">/com.csu.utils/error.jsp</result>
+		</action>
 	</package>
 
 </struts>
